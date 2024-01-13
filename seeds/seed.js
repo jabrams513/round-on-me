@@ -2,7 +2,7 @@
 const sequelize = require('../config/connection');
 
 // Importing functions to seed memberss, posts, and comments
-const seedUsers = require('./memberData');
+const seedMembers = require('./memberData');
 const seedPosts = require('./postData');
 const seedComments = require('./commentData');
 
