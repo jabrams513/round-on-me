@@ -33,5 +33,5 @@ const seedMembers = async () => {
     }
 };
 
-// Export the seedUsers function for use in other parts of the application
-module.exports = seedUsers;
+// Export the seedMembers function for use in other parts of the application
+module.exports = seedMembers;
