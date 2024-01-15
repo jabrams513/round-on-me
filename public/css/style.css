@@ -13,3 +13,7 @@
 .navbar-brand {
     font-family: 'Poppins', sans-serif;
 }
+
+.navbar-logo {
+    min-width: 250px;
+}
