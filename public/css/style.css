@@ -1,1 +1,15 @@
 /* Using Bootstrap */
+
+/* Optional: Use downloaded font as header */
+@font-face {
+    font-family: 'Bellfort';
+    src: url('fonts/bellfort_font/Bellfort.woff2') format('woff2'),
+        url('fonts/bellfort_font/Bellfort.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply Open Sans font to navbar-brand */
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+}
