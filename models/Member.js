@@ -38,7 +38,7 @@ Member.init(
   {
     // Hooks to hash the password before creating or updating a member
     hooks: {
-      beforeCreate: async (Member) => {
+      beforeCreate: async (newMemberData) => {
         newMemberData.password = await bcrypt.hash(newMemberData.password, 10);
         return newMemberData;
       },
