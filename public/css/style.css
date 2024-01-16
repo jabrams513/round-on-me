@@ -67,5 +67,18 @@ body {
 
 footer a {
   text-decoration: none;
+  color: #6C757D;
+  transition: color 0.3s ease-in-out; 
+}
+
+footer a:hover {
   color: #4a9c82;
+}
+
+.social-media-links {
+  margin: 20px auto;
+}
+
+.social-media-icon {
+  padding: 5px;
 }
