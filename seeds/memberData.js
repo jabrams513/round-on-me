@@ -4,20 +4,20 @@ const { Member } = require('../models');
 // Sample data for seeding members
 const memberData = [
     {
-        username: 'jabrams',
-        password: '6.2LV8'
+        username: 'CharlesWorthingtonIII',
+        password: 'BentleyMaybach'
     },
     {
-        username: 'AZCnyc',
-        password: 'globetrotter'
+        username: 'PenelopeAshford',
+        password: '1$TCLA$$'
     },
     {
-        username: 'SnoopDog',
-        password: 'sniffwoof'
+        username: 'ReginaldKingsley',
+        password: 'g0lfK1ng'
     },
     {
-        username: 'PeachPanther',
-        password: 'friendlywhiskers'
+        username: 'AlexandraMontgomery',
+        password: 'seriouscatlady'
     }
 ];
 

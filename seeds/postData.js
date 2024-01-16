@@ -3,23 +3,23 @@ const { Post } = require("../models");
 // Sample data for seeding posts
 const postData = [
     {
-        title: "Post 1",
-        content: "Post 1 Content post 1 content",
+        title: "Father's Day Matchup",
+        content: "$65 entry per member. All donations go to new cabanas at the resort.",
         member_id: 1,
     },
     {
-        title: "Post 2",
-        content: "Post 2 Content post 2 content",
+        title: "IMMEDIATE: Seeking a 4th",
+        content: "Our 4th dropped out last minute. If anyone is interested THIS ROUND ON ME!!!",
         member_id: 2,
     },
     {
-        title: "Post 3",
-        content: "Post 3 Content post 3 content",
+        title: "Driving Competition",
+        content: "Winning member will get a $250 credit to the pro shop",
         member_id: 3,
     },
     {
-        title: "Post 4",
-        content: "Post 4 Content post 4 content",
+        title: "Junior Clinic",
+        content: "Topics Covered: Basic Grip & Stance, Swing Basics, Short Game Skills, and Golf Etiquette",
         member_id: 4,
     }
 ];
