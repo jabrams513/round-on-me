@@ -20,7 +20,7 @@
 
 body {
     /* golf tee background */
-    background-image: url('https://golf.com/wp-content/uploads/2019/03/how-many-dimples-on-a-golf-ball-996x560.jpg');
-    background-size: cover;
+    background-image: url('/images/golftee.jpg');
+    background-size: vw 100;
     background-position: center;
 }
