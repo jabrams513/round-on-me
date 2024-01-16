@@ -3,22 +3,22 @@ const { Comment } = require('../models');
 // Sample data for seeding comments
 const commentData = [
     {
-        comment_text: "Comment 1 comment 1",
+        comment_text: "Cover table manners while you're at it 🙏🏻",
         member_id: 1,
         post_id: 4
     },
     {
-        comment_text: "Comment 2 comment 2",
+        comment_text: "No one is outdriving me! I've had my eyes on a polo and vest combo since the 2011 Summer Classic series.",
         member_id: 2,
         post_id: 3
     },
     {
-        comment_text: "Comment 3 comment 3",
+        comment_text: "My +6 handicap is nothing to scoff at. I'd be happy to share my wisdom as your partner.",
         member_id: 3,
         post_id: 2
     },
     {
-        comment_text: "Comment 4 comment 4",
+        comment_text: "I shall bring only my favorite child.",
         member_id: 4,
         post_id: 1
     }
