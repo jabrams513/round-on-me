@@ -11,7 +11,7 @@ router.get("/", withAuth, async (req, res) => {
       where: {
         member_id: req.session.member_id,
       },
-      attributes: ["id", "title", "content", "created_date"],
+      attributes: ["id", "title", "content", "created_date", "skill_level"],
       include: [
         {
           model: Comment,
@@ -47,7 +47,7 @@ router.get("/edit/:id", withAuth, async (req, res) => {
       where: {
         id: req.params.id,
       },
-      attributes: ["id", "title", "content", "created_date"],
+      attributes: ["id", "title", "content", "created_date", "skill_level"],
       include: [
         {
           model: Member,
