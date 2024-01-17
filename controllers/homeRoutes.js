@@ -7,7 +7,7 @@ router.get("/", async (req, res) => {
   try {
     // Fetch all posts with associated comments and members
     const postData = await Post.findAll({
-      attributes: ["id", "title", "content", "created_date"],
+      attributes: ["id", "title", "content", "created_date", "skill_level"],
       include: [
         {
           model: Comment,
@@ -26,7 +26,6 @@ router.get("/", async (req, res) => {
 
     // Map and format the post data for rendering
     const posts = postData.map((post) => post.get({ plain: true }));
-    
     // Render the homepage view with the posts data
     res.render("homepage", { posts, loggedIn: req.session.loggedIn });
   } catch (err) {
@@ -57,7 +56,7 @@ router.get("/post/:id", async (req, res) => {
       where: {
         id: req.params.id,
       },
-      attributes: ["id", "content", "title", "created_date"],
+      attributes: ["id", "content", "title", "created_date", "skill_level"],
       include: [
         {
           model: Comment,

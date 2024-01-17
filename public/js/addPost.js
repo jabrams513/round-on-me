@@ -6,14 +6,14 @@ async function newFormHandler(event) {
   // Retrieve values from form inputs
   const title = document.querySelector('input[name="post-title"]').value;
   const content = document.querySelector('textarea[name="content"]').value;
-
-  // Check if both title and content are provided
-  if (title && content) {
+  const skill_level = document.querySelector('select[name="skill_level"]').value;
+  // Check if title, content, and skill level are provided
+  if (title && content && skill_level) {
     try {
       // Send a POST request to the server to create a new post
       const response = await fetch("/api/posts", {
         method: "POST",
-        body: JSON.stringify({ title, content }),
+        body: JSON.stringify({ title, content, skill_level }),
         headers: {
           "Content-Type": "application/json",
         },
@@ -33,8 +33,8 @@ async function newFormHandler(event) {
       alert("An unexpected error occurred. Please try again.");
     }
   } else {
-    // Display an alert if either title or content is missing
-    alert("Please provide both title and content for the new post.");
+    // Display an alert if either title, content, or skill level is missing
+    alert("Please provide title, content, and select a skill level for the new post.");
   }
 }
 

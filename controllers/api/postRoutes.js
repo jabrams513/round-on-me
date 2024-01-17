@@ -68,9 +68,11 @@ router.get("/:id", (req, res) => {
 
 // Route to create a new post
 router.post("/", withAuth, (req, res) => {
+  console.log(req.body);
   Post.create({
     title: req.body.title,
     content: req.body.content,
+    skill_level: req.body.skill_level,
     member_id: req.session.member_id,
   })
     .then((postData) => res.json(postData))
