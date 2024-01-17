@@ -2,7 +2,9 @@
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
+const handlebars = require("handlebars");
 const exphbs = require('express-handlebars');
+require("handlebars-helpers")(handlebars);
 const routes = require('./controllers');  // Importing routes defined in the controllers directory
 const helpers = require('./utils/helpers');  // Importing custom helper functions
 
