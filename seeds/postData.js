@@ -6,21 +6,25 @@ const postData = [
         title: "Father's Day Matchup",
         content: "$65 entry per member. All donations go to new cabanas at the resort.",
         member_id: 1,
+        skill_level: "open",
     },
     {
         title: "IMMEDIATE: Seeking a 4th",
         content: "Our 4th dropped out last minute. If anyone is interested THIS ROUND ON ME!!!",
         member_id: 2,
+        skill_level: "mixed",
     },
     {
         title: "Driving Competition",
         content: "Winning member will get a $250 credit to the pro shop",
         member_id: 3,
+        skill_level: "advanced",
     },
     {
         title: "Junior Clinic",
         content: "Topics Covered: Basic Grip & Stance, Swing Basics, Short Game Skills, and Golf Etiquette",
         member_id: 4,
+        skill_level: "junior",
     }
 ];
 
