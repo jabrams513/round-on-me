@@ -34,7 +34,7 @@ Post.init(
         },
         // Skill level associated with member post
         skill_level: {
-            type: DataTypes.ENUM('junior', 'beginner', 'intermediate', 'advanced', 'all-levels'),
+            type: DataTypes.ENUM('junior', 'beginner', 'intermediate', 'advanced', 'open', 'mixed'),
             allowNull: true,
         },
         // Date when the post was created, defaulting to the current date
